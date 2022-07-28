@@ -7,9 +7,9 @@ export const userSlice = createSlice({
     // initial values
     initialState: { 
         value: {
-            name: "Allen",
-            age: 27,
-            email: "a@a.com",
+            name: "",
+            age: 0,
+            email: "",
         } 
     },
     reducers: {
@@ -19,5 +19,7 @@ export const userSlice = createSlice({
         }
     }
 })
+
+export const {login} = userSlice.actions;
 
 export default userSlice.reducer;
