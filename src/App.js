@@ -2,6 +2,7 @@ import './App.css';
 import Profile from './components/Profile';
 import Login from './components/Login';
 import ColorTheme from './components/ColorTheme';
+import Hide from './components/Hide';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <Login />
         <br/>
         <ColorTheme/>
+        <br/>
+        <Hide/>
       </div>
     </>
   );
