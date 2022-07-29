@@ -5,14 +5,14 @@ const Profile = () => {
 
     // state.nameOfSlice.value
     const user = useSelector((state) => state.user.value);
-    console.log(user)
+    const theme = useSelector((state) => state.theme.value);
 
     return (
         <>
-            <div>Profile</div>
-            <p>Name: {user.name} </p>
-            <p>Age: {user.age}</p>
-            <p>Email: {user.email}</p>
+            <div style={{color: theme}}>Profile</div>
+            <p style={{color: theme}}>Name: {user.name} </p>
+            <p style={{color: theme}}>Age: {user.age}</p>
+            <p style={{color: theme}}>Email: {user.email}</p>
         </>
     )
 }
